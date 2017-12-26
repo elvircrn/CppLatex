@@ -7,17 +7,17 @@
 #include <sstream>
 
 namespace ltx {
-    const std::string HIGH_COL = ">{\\columncolor[gray]{0.8}}";
-    const std::string HIGH_ROW = "\\rowcolor{lightgray}";
-    const std::string HLINE = "\\hline";
-    const std::string BLANK = "\\\\";
+const std::string HIGH_COL = ">{\\columncolor[gray]{0.8}}";
+const std::string HIGH_ROW = "\\rowcolor{lightgray}";
+const std::string HLINE = "\\hline";
+const std::string BLANK = "\\\\";
 
-    void Begin(std::string s);
-    void End(std::string s);
-    std::string BeginStr(std::string s);
-    std::string EndStr(std::string s);
+void Begin(std::string s);
+void End(std::string s);
+std::string BeginStr(std::string s);
+std::string EndStr(std::string s);
 
-    const std::string HEADER = R"(\documentclass[12pt, a4paper]{article}
+const std::string HEADER = R"(\documentclass[12pt, a4paper]{article}
 \usepackage[utf8x]{inputenc}
 \usepackage{amsmath}
 \usepackage{tikz}
@@ -38,14 +38,7 @@ namespace ltx {
 \usepackage{graphicx}
 \begin{document})";
 
-    const std::string FOOTER = "\\end{document}";
-
-	
-	
-	
-	
+const std::string FOOTER = "\\end{document}";
 }
 
-
-
-#endif //SIMPLEXGENERATOR_LATEX_H
+#endif // SIMPLEXGENERATOR_LATEX_H
